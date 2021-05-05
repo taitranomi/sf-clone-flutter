@@ -88,12 +88,29 @@ class MyStatelessWidget extends StatelessWidget {
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: <Widget>[
-            DrawerHeader(
-              child: Text('Drawer Header'),
-              decoration: BoxDecoration(
-                color: Colors.blue,
+            Container(
+                height: 120.0,
+                child: DrawerHeader(
+                  child: Row(
+                    children: <Widget>[
+                      CircleAvatar(
+                        radius: 40.0,
+                        backgroundColor: Colors.blue.shade100,
+                        child: Text('TT'),
+                      ),
+                      Column(children: <Widget>[
+                        Text('Tai Tran'),
+                        Text('https://'),
+                      ]),
+                    ],
+                  ),
+                ),
+                decoration: BoxDecoration(
+                  color: Color(0xFF0070D2),
+                ),
+                margin: EdgeInsets.all(0.0),
+                padding: EdgeInsets.all(0.0)
               ),
-            ),
             ListTile(
               title: Text('Item 1'),
               onTap: () {
