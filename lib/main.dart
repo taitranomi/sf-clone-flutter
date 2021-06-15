@@ -4,6 +4,7 @@
 // opens a [SnackBar], while the second action navigates to a new page.
 
 import 'package:flutter/material.dart';
+import 'package:sf_clone_flutter/login/login.dart';
 
 void main() => runApp(const MyApp());
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: _title,
-      home: MyStatelessWidget(),
+      home: LoginScreen(),
     );
   }
 }
@@ -109,8 +110,7 @@ class MyStatelessWidget extends StatelessWidget {
                   color: Color(0xFF0070D2),
                 ),
                 margin: EdgeInsets.all(0.0),
-                padding: EdgeInsets.all(0.0)
-              ),
+                padding: EdgeInsets.all(0.0)),
             ListTile(
               title: Text('Item 1'),
               onTap: () {
