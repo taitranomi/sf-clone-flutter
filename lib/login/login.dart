@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
     // This URL is an endpoint that's provided by the authorization server. It's
     // usually included in the server's documentation of its OAuth2 API.
     final authorizationEndpoint =
-        Uri.parse('https://cmcinfinity-dev-ed.my.salesforce.com/services/oauth2/authorize');
+        Uri.parse('https://login.salesforce.com/services/oauth2/authorize');
 
     // The user should supply their own username and password.
     final username = 'tqtai@cts.com.vn';
